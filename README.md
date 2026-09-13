@@ -86,3 +86,13 @@ End-to-end automated pipeline with configuration and Docker.
 - Numerical statistics generated
 - `profiling_report.json` generated
 - `basic_statistics.csv` generated
+
+### Sprint 3
+- Advanced data profiling implemented
+- Missing-value analysis extended
+- Missing-value heatmap generated
+- Correlation heatmap generated
+- Numerical distribution plots generated
+- Potential outliers detected using IQR
+- Suspicious columns identified
+- Advanced profiling report generated

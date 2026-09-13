@@ -1,0 +1,14 @@
+column,outlier_count
+encounter_id,0
+patient_nbr,247
+admission_type_id,341
+discharge_disposition_id,9818
+admission_source_id,6956
+time_in_hospital,2252
+num_lab_procedures,143
+num_procedures,4954
+num_medications,2557
+number_outpatient,16739
+number_emergency,11383
+number_inpatient,7049
+number_diagnoses,281

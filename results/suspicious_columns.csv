@@ -1,0 +1,22 @@
+column,reason
+encounter_id,Potential identifier or PII-like column
+admission_type_id,Potential identifier or PII-like column
+discharge_disposition_id,Potential identifier or PII-like column
+admission_source_id,Potential identifier or PII-like column
+number_outpatient,Potential identifier or PII-like column
+number_emergency,Potential identifier or PII-like column
+number_inpatient,Potential identifier or PII-like column
+number_diagnoses,Potential identifier or PII-like column
+repaglinide,Potential identifier or PII-like column
+nateglinide,Potential identifier or PII-like column
+chlorpropamide,Potential identifier or PII-like column
+glimepiride,Potential identifier or PII-like column
+acetohexamide,Potential identifier or PII-like column
+glipizide,Potential identifier or PII-like column
+glyburide,Potential identifier or PII-like column
+tolbutamide,Potential identifier or PII-like column
+tolazamide,Potential identifier or PII-like column
+examide,Potential identifier or PII-like column
+glyburide-metformin,Potential identifier or PII-like column
+glipizide-metformin,Potential identifier or PII-like column
+glimepiride-pioglitazone,Potential identifier or PII-like column
