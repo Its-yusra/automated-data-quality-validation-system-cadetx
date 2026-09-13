@@ -75,3 +75,14 @@ Rule-based validation and anomaly detection.
 
 ### Module 4 — Automate
 End-to-end automated pipeline with configuration and Docker.
+
+### Sprint 2
+- Module 1 basic profiling implemented
+- Dataset metadata analyzed
+- Data types analyzed
+- Missing values analyzed
+- Unique values analyzed
+- Duplicate records checked
+- Numerical statistics generated
+- `profiling_report.json` generated
+- `basic_statistics.csv` generated
