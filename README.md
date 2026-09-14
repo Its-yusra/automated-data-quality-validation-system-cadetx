@@ -96,3 +96,62 @@ End-to-end automated pipeline with configuration and Docker.
 - Potential outliers detected using IQR
 - Suspicious columns identified
 - Advanced profiling report generated
+
+### Sprint 4 — Module 1 Completion
+
+Sprint 4 completed the Profile module of the Automated Data Quality & Validation System.
+
+Completed tasks:
+
+* Finalized basic data profiling
+* Finalized advanced data profiling
+* Added missing-value analysis
+* Added missing-value heatmap
+* Added numerical distribution analysis
+* Added correlation heatmap
+* Added IQR-based outlier detection
+* Added suspicious-column detection
+* Added advanced profiling JSON report
+* Added Module 1 documentation
+* Added automated tests using pytest
+* Verified Profile module functionality
+
+### Module 1 Outputs
+
+The Profile module generates:
+
+```text
+results/
+├── profiling_report.json
+├── basic_statistics.csv
+├── missing_values_summary.csv
+├── missing_values_heatmap.png
+├── correlation_heatmap.png
+├── distributions.png
+├── outlier_summary.csv
+├── suspicious_columns.csv
+└── advanced_profiling_report.json
+```
+
+### Testing
+
+Tests can be executed from the project root using:
+
+```bash
+pytest
+```
+
+The tests verify:
+
+* Missing-value analysis
+* Outlier detection
+* Suspicious-column detection
+* Advanced profiling report generation
+
+### Module 1 Status
+
+**Completed**
+
+The Profile module is now ready to provide data-quality information to the next stage of the system:
+
+**Module 2 — Clean**

@@ -1,0 +1,268 @@
+{
+    "dataset": {
+        "name": "UCI Diabetes 130-US Hospitals",
+        "rows": 101766,
+        "columns": 50
+    },
+    "missing_values": {
+        "encounter_id": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "patient_nbr": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "race": {
+            "count": 2273,
+            "percentage": 2.23
+        },
+        "gender": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "age": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "weight": {
+            "count": 98569,
+            "percentage": 96.86
+        },
+        "admission_type_id": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "discharge_disposition_id": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "admission_source_id": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "time_in_hospital": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "payer_code": {
+            "count": 40256,
+            "percentage": 39.56
+        },
+        "medical_specialty": {
+            "count": 49949,
+            "percentage": 49.08
+        },
+        "num_lab_procedures": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "num_procedures": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "num_medications": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "number_outpatient": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "number_emergency": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "number_inpatient": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "diag_1": {
+            "count": 21,
+            "percentage": 0.02
+        },
+        "diag_2": {
+            "count": 358,
+            "percentage": 0.35
+        },
+        "diag_3": {
+            "count": 1423,
+            "percentage": 1.4
+        },
+        "number_diagnoses": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "max_glu_serum": {
+            "count": 96420,
+            "percentage": 94.75
+        },
+        "A1Cresult": {
+            "count": 84748,
+            "percentage": 83.28
+        },
+        "metformin": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "repaglinide": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "nateglinide": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "chlorpropamide": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "glimepiride": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "acetohexamide": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "glipizide": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "glyburide": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "tolbutamide": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "pioglitazone": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "rosiglitazone": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "acarbose": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "miglitol": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "troglitazone": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "tolazamide": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "examide": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "citoglipton": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "insulin": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "glyburide-metformin": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "glipizide-metformin": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "glimepiride-pioglitazone": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "metformin-rosiglitazone": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "metformin-pioglitazone": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "change": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "diabetesMed": {
+            "count": 0,
+            "percentage": 0.0
+        },
+        "readmitted": {
+            "count": 0,
+            "percentage": 0.0
+        }
+    },
+    "column_types": {
+        "numerical_columns": [
+            "encounter_id",
+            "patient_nbr",
+            "admission_type_id",
+            "discharge_disposition_id",
+            "admission_source_id",
+            "time_in_hospital",
+            "num_lab_procedures",
+            "num_procedures",
+            "num_medications",
+            "number_outpatient",
+            "number_emergency",
+            "number_inpatient",
+            "number_diagnoses"
+        ],
+        "categorical_columns": [
+            "race",
+            "gender",
+            "age",
+            "weight",
+            "payer_code",
+            "medical_specialty",
+            "diag_1",
+            "diag_2",
+            "diag_3",
+            "max_glu_serum",
+            "A1Cresult",
+            "metformin",
+            "repaglinide",
+            "nateglinide",
+            "chlorpropamide",
+            "glimepiride",
+            "acetohexamide",
+            "glipizide",
+            "glyburide",
+            "tolbutamide",
+            "pioglitazone",
+            "rosiglitazone",
+            "acarbose",
+            "miglitol",
+            "troglitazone",
+            "tolazamide",
+            "examide",
+            "citoglipton",
+            "insulin",
+            "glyburide-metformin",
+            "glipizide-metformin",
+            "glimepiride-pioglitazone",
+            "metformin-rosiglitazone",
+            "metformin-pioglitazone",
+            "change",
+            "diabetesMed",
+            "readmitted"
+        ]
+    },
+    "duplicate_rows": 0,
+    "outlier_method": "IQR (Interquartile Range)",
+    "suspicious_column_rule": "Columns containing ID, number, name, email, phone, or address"
+}
