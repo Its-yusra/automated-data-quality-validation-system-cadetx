@@ -61,3 +61,4 @@ def test_advanced_report():
     assert "missing_values" in report
     assert "column_types" in report
     assert "duplicate_rows" in report
+

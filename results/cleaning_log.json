@@ -1,0 +1,274 @@
+{
+    "dataset": "data\\raw\\diabetic_data.csv",
+    "original_rows": 101766,
+    "original_columns": 50,
+    "final_rows": 101766,
+    "final_columns": 50,
+    "missing_values_before": 374017,
+    "missing_values_after": 374017,
+    "duplicates_removed": 0,
+    "numeric_columns_converted": [
+        "time_in_hospital",
+        "num_lab_procedures",
+        "num_procedures",
+        "num_medications",
+        "number_outpatient",
+        "number_emergency",
+        "number_inpatient",
+        "number_diagnoses"
+    ],
+    "string_values_stripped": true,
+    "categorical_values_normalized_to_lowercase": true,
+    "schema": {
+        "encounter_id": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 101766
+        },
+        "patient_nbr": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 71518
+        },
+        "race": {
+            "dtype": "str",
+            "missing_values": 2273,
+            "unique_values": 5
+        },
+        "gender": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 3
+        },
+        "age": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 10
+        },
+        "weight": {
+            "dtype": "str",
+            "missing_values": 98569,
+            "unique_values": 9
+        },
+        "admission_type_id": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 8
+        },
+        "discharge_disposition_id": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 26
+        },
+        "admission_source_id": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 17
+        },
+        "time_in_hospital": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 14
+        },
+        "payer_code": {
+            "dtype": "str",
+            "missing_values": 40256,
+            "unique_values": 17
+        },
+        "medical_specialty": {
+            "dtype": "str",
+            "missing_values": 49949,
+            "unique_values": 72
+        },
+        "num_lab_procedures": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 118
+        },
+        "num_procedures": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 7
+        },
+        "num_medications": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 75
+        },
+        "number_outpatient": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 39
+        },
+        "number_emergency": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 33
+        },
+        "number_inpatient": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 21
+        },
+        "diag_1": {
+            "dtype": "str",
+            "missing_values": 21,
+            "unique_values": 716
+        },
+        "diag_2": {
+            "dtype": "str",
+            "missing_values": 358,
+            "unique_values": 748
+        },
+        "diag_3": {
+            "dtype": "str",
+            "missing_values": 1423,
+            "unique_values": 789
+        },
+        "number_diagnoses": {
+            "dtype": "int64",
+            "missing_values": 0,
+            "unique_values": 16
+        },
+        "max_glu_serum": {
+            "dtype": "str",
+            "missing_values": 96420,
+            "unique_values": 3
+        },
+        "A1Cresult": {
+            "dtype": "str",
+            "missing_values": 84748,
+            "unique_values": 3
+        },
+        "metformin": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "repaglinide": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "nateglinide": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "chlorpropamide": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "glimepiride": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "acetohexamide": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 2
+        },
+        "glipizide": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "glyburide": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "tolbutamide": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 2
+        },
+        "pioglitazone": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "rosiglitazone": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "acarbose": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "miglitol": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "troglitazone": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 2
+        },
+        "tolazamide": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 3
+        },
+        "examide": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 1
+        },
+        "citoglipton": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 1
+        },
+        "insulin": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "glyburide-metformin": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 4
+        },
+        "glipizide-metformin": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 2
+        },
+        "glimepiride-pioglitazone": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 2
+        },
+        "metformin-rosiglitazone": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 2
+        },
+        "metformin-pioglitazone": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 2
+        },
+        "change": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 2
+        },
+        "diabetesMed": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 2
+        },
+        "readmitted": {
+            "dtype": "str",
+            "missing_values": 0,
+            "unique_values": 3
+        }
+    }
+}

@@ -154,4 +154,42 @@ The tests verify:
 
 The Profile module is now ready to provide data-quality information to the next stage of the system:
 
-**Module 2 — Clean**
+
+## Module 2 — Clean
+
+The Clean module prepares the dataset for further validation.
+
+### Current Cleaning Operations
+
+* Schema inference
+* Missing-value representation handling
+* String whitespace cleaning
+* Categorical normalization
+* Numeric type conversion
+* Duplicate detection and removal
+* Cleaning activity logging
+
+### Input
+
+`data/raw/diabetic_data.csv`
+
+### Outputs
+
+`results/cleaned_data.csv`
+
+`results/cleaning_log.json`
+
+### Tests
+
+Run the cleaning tests with:
+
+```bash
+pytest tests/test_clean.py -v
+```
+
+Run all project tests with:
+
+```bash
+pytest -v
+```
+
