@@ -192,4 +192,36 @@ Run all project tests with:
 ```bash
 pytest -v
 ```
+### Sprint 6 — Missing Value Handling
+
+Sprint 6 extends the Clean module with missing-value analysis and handling.
+
+The system:
+
+* Generates a missing-value report
+* Calculates missing-value percentages
+* Fills numerical missing values using the median
+* Fills categorical missing values using the mode
+* Saves the cleaned dataset
+* Records the cleaning process
+
+### Outputs
+
+`results/missing_value_report.json`
+
+`results/cleaned_data_v2.csv`
+
+### Tests
+
+Run Sprint 6 tests:
+
+```bash
+pytest tests/test_missing.py -v
+```
+
+Run all project tests:
+
+```bash
+pytest -v
+```
 

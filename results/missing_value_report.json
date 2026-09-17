@@ -1,0 +1,420 @@
+{
+    "missing_values_before": 374017,
+    "missing_values_after": 0,
+    "numerical_columns_filled": [],
+    "categorical_columns_filled": [
+        "race",
+        "weight",
+        "payer_code",
+        "medical_specialty",
+        "diag_1",
+        "diag_2",
+        "diag_3",
+        "max_glu_serum",
+        "A1Cresult"
+    ],
+    "before": {
+        "encounter_id": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "patient_nbr": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "race": {
+            "missing_values": 2273,
+            "missing_percentage": 2.23
+        },
+        "gender": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "age": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "weight": {
+            "missing_values": 98569,
+            "missing_percentage": 96.86
+        },
+        "admission_type_id": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "discharge_disposition_id": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "admission_source_id": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "time_in_hospital": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "payer_code": {
+            "missing_values": 40256,
+            "missing_percentage": 39.56
+        },
+        "medical_specialty": {
+            "missing_values": 49949,
+            "missing_percentage": 49.08
+        },
+        "num_lab_procedures": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "num_procedures": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "num_medications": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "number_outpatient": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "number_emergency": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "number_inpatient": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "diag_1": {
+            "missing_values": 21,
+            "missing_percentage": 0.02
+        },
+        "diag_2": {
+            "missing_values": 358,
+            "missing_percentage": 0.35
+        },
+        "diag_3": {
+            "missing_values": 1423,
+            "missing_percentage": 1.4
+        },
+        "number_diagnoses": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "max_glu_serum": {
+            "missing_values": 96420,
+            "missing_percentage": 94.75
+        },
+        "A1Cresult": {
+            "missing_values": 84748,
+            "missing_percentage": 83.28
+        },
+        "metformin": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "repaglinide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "nateglinide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "chlorpropamide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glimepiride": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "acetohexamide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glipizide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glyburide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "tolbutamide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "pioglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "rosiglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "acarbose": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "miglitol": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "troglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "tolazamide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "examide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "citoglipton": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "insulin": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glyburide-metformin": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glipizide-metformin": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glimepiride-pioglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "metformin-rosiglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "metformin-pioglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "change": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "diabetesMed": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "readmitted": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        }
+    },
+    "after": {
+        "encounter_id": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "patient_nbr": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "race": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "gender": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "age": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "weight": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "admission_type_id": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "discharge_disposition_id": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "admission_source_id": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "time_in_hospital": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "payer_code": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "medical_specialty": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "num_lab_procedures": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "num_procedures": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "num_medications": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "number_outpatient": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "number_emergency": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "number_inpatient": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "diag_1": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "diag_2": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "diag_3": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "number_diagnoses": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "max_glu_serum": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "A1Cresult": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "metformin": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "repaglinide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "nateglinide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "chlorpropamide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glimepiride": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "acetohexamide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glipizide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glyburide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "tolbutamide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "pioglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "rosiglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "acarbose": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "miglitol": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "troglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "tolazamide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "examide": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "citoglipton": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "insulin": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glyburide-metformin": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glipizide-metformin": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "glimepiride-pioglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "metformin-rosiglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "metformin-pioglitazone": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "change": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "diabetesMed": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        },
+        "readmitted": {
+            "missing_values": 0,
+            "missing_percentage": 0.0
+        }
+    }
+}
