@@ -1,0 +1,63 @@
+{
+    "dataset_rows": 101766,
+    "dataset_columns": 50,
+    "missing_values_check": {
+        "total_missing_values": 0,
+        "passed": true
+    },
+    "duplicate_check": {
+        "duplicate_rows": 0,
+        "passed": true
+    },
+    "numeric_range_check": {
+        "time_in_hospital": {
+            "minimum_allowed": 1,
+            "maximum_allowed": 14,
+            "invalid_values": 0,
+            "passed": true
+        },
+        "num_lab_procedures": {
+            "minimum_allowed": 0,
+            "maximum_allowed": 200,
+            "invalid_values": 0,
+            "passed": true
+        },
+        "num_procedures": {
+            "minimum_allowed": 0,
+            "maximum_allowed": 10,
+            "invalid_values": 0,
+            "passed": true
+        },
+        "num_medications": {
+            "minimum_allowed": 0,
+            "maximum_allowed": 100,
+            "invalid_values": 0,
+            "passed": true
+        },
+        "number_outpatient": {
+            "minimum_allowed": 0,
+            "maximum_allowed": 100,
+            "invalid_values": 0,
+            "passed": true
+        },
+        "number_emergency": {
+            "minimum_allowed": 0,
+            "maximum_allowed": 100,
+            "invalid_values": 0,
+            "passed": true
+        },
+        "number_inpatient": {
+            "minimum_allowed": 0,
+            "maximum_allowed": 100,
+            "invalid_values": 0,
+            "passed": true
+        },
+        "number_diagnoses": {
+            "minimum_allowed": 1,
+            "maximum_allowed": 20,
+            "invalid_values": 0,
+            "passed": true
+        }
+    },
+    "overall_quality_check_passed": true
+}

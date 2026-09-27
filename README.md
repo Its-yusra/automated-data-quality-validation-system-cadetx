@@ -225,3 +225,33 @@ Run all project tests:
 pytest -v
 ```
 
+### Sprint 7 — Data Consistency and Cleaning Quality
+
+Sprint 7 adds automated quality checks to verify the cleaned dataset before further validation.
+
+The system checks:
+
+* Remaining missing values
+* Duplicate rows
+* Selected numerical value ranges
+* Overall cleaning quality status
+
+### Outputs
+
+`results/cleaning_quality_report.json`
+
+`results/final_cleaned_data.csv`
+
+### Tests
+
+Run Sprint 7 tests:
+
+```bash
+pytest tests/test_cleaning_quality.py -v
+```
+
+Run all project tests:
+
+```bash
+pytest -v
+```
