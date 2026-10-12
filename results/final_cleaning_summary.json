@@ -1,0 +1,24 @@
+{
+    "original_dataset": {
+        "rows": 101766,
+        "columns": 50,
+        "missing_values": 181168,
+        "duplicate_rows": 0,
+        "numeric_columns": 13,
+        "categorical_columns": 37
+    },
+    "final_cleaned_dataset": {
+        "rows": 101766,
+        "columns": 50,
+        "missing_values": 0,
+        "duplicate_rows": 0,
+        "numeric_columns": 13,
+        "categorical_columns": 37
+    },
+    "changes": {
+        "rows_removed": 0,
+        "columns_changed": 0,
+        "missing_values_remaining": 0,
+        "duplicate_rows_remaining": 0
+    }
+}
