@@ -1,0 +1,22 @@
+{
+    "input_dataset": "results\\final_cleaned_data.csv",
+    "total_rows": 101766,
+    "valid_rows": 101766,
+    "invalid_rows": 0,
+    "validation_passed": true,
+    "error_counts": {
+        "rows_with_missing_values": 0,
+        "duplicate_rows": 0,
+        "numeric_range_violations": {
+            "time_in_hospital": 0,
+            "num_lab_procedures": 0,
+            "num_procedures": 0,
+            "num_medications": 0,
+            "number_outpatient": 0,
+            "number_emergency": 0,
+            "number_inpatient": 0,
+            "number_diagnoses": 0
+        }
+    },
+    "invalid_records_file": "results\\invalid_records.csv"
+}
