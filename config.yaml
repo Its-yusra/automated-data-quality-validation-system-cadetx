@@ -1,0 +1,31 @@
+
+pipeline:
+  name: automated-data-quality-validation
+  log_level: INFO
+
+cleaning:
+  missing_values: ["?", "", " "]
+  normalize_strings: true
+  remove_duplicates: true
+  fill_numeric_missing: median
+  fill_categorical_missing: mode
+
+validation:
+  required_columns:
+    - encounter_id
+    - patient_nbr
+    - race
+    - gender
+    - age
+    - time_in_hospital
+    - readmitted
+
+  numeric_ranges:
+    time_in_hospital: [1, 14]
+    num_lab_procedures: [0, 200]
+    num_procedures: [0, 10]
+    num_medications: [0, 100]
+    number_outpatient: [0, 100]
+    number_emergency: [0, 100]
+    number_inpatient: [0, 100]
+    number_diagnoses: [1, 20]

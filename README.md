@@ -1,257 +1,327 @@
 # Automated Data Quality & Validation System
 
-## Project Domain
-Healthcare
+## 1. Project Overview
 
-## Project Goal
+The Automated Data Quality & Validation System is a Python-based project designed to profile, clean, and validate healthcare datasets. It automates key data quality operations and generates reports to support reliable and reproducible data processing.
 
-The goal of this project is to develop an automated data-quality
-gatekeeper that profiles, cleans, validates, and automates data
-quality checks on healthcare datasets.
+**Project Domain:** Healthcare  
+**Dataset:** Diabetes 130-US Hospitals for Years 1999–2008  
+**Language:** Python
 
-## Project Pipeline
+## 2. Project Objectives
 
-Raw Dataset
-→ Profile
-→ Clean
-→ Validate
-→ Automate
+- Profile dataset structure, statistics, missing values, and duplicates.
+- Clean missing values and inconsistent data representations.
+- Validate required columns and configured numeric ranges.
+- Generate profiling, cleaning, and validation reports.
+- Run the workflow using a command-line interface.
+- Support YAML configuration and structured logging.
+- Run the pipeline inside Docker.
+- Track the raw dataset with DVC and selected large files with Git LFS.
+- Verify functionality using automated unit and integration tests.
 
-## Selected Dataset
+## 3. Dataset Information
 
-Diabetes 130-US Hospitals for Years 1999-2008
+**Dataset file:** `data/raw/diabetic_data.csv`
 
-Source:
-https://archive.ics.uci.edu/dataset/296/diabetes+130-us-hospitals+for+years+1999-2008
+**Source:** [UCI Machine Learning Repository — Diabetes 130-US Hospitals](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008)
 
-## Dataset Characteristics
+| Property | Value |
+|---|---|
+| Records | 101,766 |
+| Columns | 50 |
+| Domain | Healthcare |
+| File format | CSV |
+| Data types | Numeric and categorical |
+| Duplicate rows in recorded input | 0 |
 
-- 101,766 records
-- 47 features
-- Healthcare domain
-- Categorical and integer features
-- Missing values
-- Multiple data-quality issues suitable for profiling and cleaning
+The dataset contains healthcare encounter information and includes fields such as `encounter_id`, `patient_nbr`, `race`, `gender`, `age`, `time_in_hospital`, and `readmitted`.
 
-## Planned Outputs
-
-- profiling_report.json
-- cleaned_data.csv
-- cleaning_log.json
-- validation_report.json
-
-## Technologies
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- PyYAML
-- Pytest
-- Git/GitHub
-- Docker
-
-## Current Progress
-
-### Sprint 1
-- Healthcare domain selected
-- Healthcare dataset selected
-- Project structure created
-- Initial documentation prepared
-- Initial dataset inspection script prepared
-
-## Future Modules
-
-### Module 1 — Profile
-Dataset profiling and quality analysis.
-
-### Module 2 — Clean
-Missing values, duplicates, data-type and format cleaning.
-
-### Module 3 — Validate
-Rule-based validation and anomaly detection.
-
-### Module 4 — Automate
-End-to-end automated pipeline with configuration and Docker.
-
-### Sprint 2
-- Module 1 basic profiling implemented
-- Dataset metadata analyzed
-- Data types analyzed
-- Missing values analyzed
-- Unique values analyzed
-- Duplicate records checked
-- Numerical statistics generated
-- `profiling_report.json` generated
-- `basic_statistics.csv` generated
-
-### Sprint 3
-- Advanced data profiling implemented
-- Missing-value analysis extended
-- Missing-value heatmap generated
-- Correlation heatmap generated
-- Numerical distribution plots generated
-- Potential outliers detected using IQR
-- Suspicious columns identified
-- Advanced profiling report generated
-
-### Sprint 4 — Module 1 Completion
-
-Sprint 4 completed the Profile module of the Automated Data Quality & Validation System.
-
-Completed tasks:
-
-* Finalized basic data profiling
-* Finalized advanced data profiling
-* Added missing-value analysis
-* Added missing-value heatmap
-* Added numerical distribution analysis
-* Added correlation heatmap
-* Added IQR-based outlier detection
-* Added suspicious-column detection
-* Added advanced profiling JSON report
-* Added Module 1 documentation
-* Added automated tests using pytest
-* Verified Profile module functionality
-
-### Module 1 Outputs
-
-The Profile module generates:
+## 4. Project Workflow
 
 ```text
-results/
-├── profiling_report.json
-├── basic_statistics.csv
-├── missing_values_summary.csv
-├── missing_values_heatmap.png
-├── correlation_heatmap.png
-├── distributions.png
-├── outlier_summary.csv
-├── suspicious_columns.csv
-└── advanced_profiling_report.json
+Raw CSV Dataset
+      |
+      v
+Data Profiling
+      |
+      v
+Data Cleaning
+      |
+      v
+Data Validation
+      |
+      v
+Reports and Cleaned Dataset
 ```
 
-### Testing
+The command-line pipeline executes profiling, cleaning, and validation and saves the generated outputs in the selected results directory.
 
-Tests can be executed from the project root using:
+## 5. Technology Stack
 
-```bash
-pytest
+- Python
+- Pandas and NumPy
+- PyYAML
+- Matplotlib and Seaborn
+- Scikit-learn
+- Pytest
+- Docker
+- DVC
+- Git and GitHub
+- Git LFS
+- JSON and CSV
+
+## 6. Project Structure
+
+```text
+automated-data-quality-validation-system-cadetx/
+├── data/
+│   └── raw/
+│       ├── diabetic_data.csv
+│       └── diabetic_data.csv.dvc
+├── module1_profile/
+├── module2_clean/
+├── module3_validate/
+├── module4_pipeline/
+│   └── logging_config.py
+├── results/
+│   ├── profiling_report.json
+│   ├── cleaned_data.csv
+│   ├── validation_report.json
+│   └── pipeline.log
+├── tests/
+│   └── test_pipeline_integration.py
+├── docs/
+│   ├── Dataset_Information.md
+│   ├── Module_1_Profile_Documentation.md
+│   ├── Project_Description.md
+│   ├── Project_Report.md
+│   └── SPRINT_11.md
+├── demo/
+│   └── project_demo.mp4
+├── config.yaml
+├── pipeline.py
+├── requirements.txt
+├── Dockerfile
+├── .gitattributes
+├── .gitignore
+└── README.md
 ```
 
-The tests verify:
+The tree shows the principal files and directories. Additional module scripts, test files, documentation, and generated outputs may also be present.
 
-* Missing-value analysis
-* Outlier detection
-* Suspicious-column detection
-* Advanced profiling report generation
+## 7. Modules and Sprint Progress
 
-### Module 1 Status
+### Module 1 — Data Profiling
 
-**Completed**
+The profiling module examines dataset dimensions, data types, missing values, duplicate records, numerical statistics, distributions, potential outliers, and suspicious columns.
 
-The Profile module is now ready to provide data-quality information to the next stage of the system:
+Principal outputs include:
 
+- `results/profiling_report.json`
+- `results/basic_statistics.csv`
+- `results/missing_values_summary.csv`
+- `results/missing_values_heatmap.png`
+- `results/correlation_heatmap.png`
+- `results/distributions.png`
+- `results/outlier_summary.csv`
+- `results/suspicious_columns.csv`
+- `results/advanced_profiling_report.json`
 
-## Module 2 — Clean
+### Module 2 — Data Cleaning
 
-The Clean module prepares the dataset for further validation.
+The cleaning components handle configured missing-value representations, string normalization, numeric and categorical missing values, duplicate records, and cleaning logs.
 
-### Current Cleaning Operations
+Outputs from the existing cleaning workflow include:
 
-* Schema inference
-* Missing-value representation handling
-* String whitespace cleaning
-* Categorical normalization
-* Numeric type conversion
-* Duplicate detection and removal
-* Cleaning activity logging
+- `results/cleaned_data.csv`
+- `results/cleaning_log.json`
+- `results/missing_value_report.json`
+- `results/cleaning_quality_report.json`
+- `results/final_cleaned_data.csv`
 
-### Input
+Other intermediate outputs may be generated by individual cleaning scripts.
 
-`data/raw/diabetic_data.csv`
+### Module 3 — Data Validation
 
-### Outputs
+The validation components check required columns, selected numeric ranges, missing values, duplicate records, and other configured quality conditions.
 
-`results/cleaned_data.csv`
+Principal outputs include:
 
-`results/cleaning_log.json`
+- `results/validation_report.json`
+- `results/validation_summary.json`
+- `results/invalid_records.csv`
 
-### Tests
+### Module 4 — Integration, Orchestration & Production Engineering
 
-Run the cleaning tests with:
+Module 4 provides a command-line pipeline, YAML configuration, logging, Docker execution, dataset versioning, and integration tests.
 
-```bash
-pytest tests/test_clean.py -v
+Key files:
+
+- `pipeline.py`
+- `config.yaml`
+- `module4_pipeline/logging_config.py`
+- `Dockerfile`
+- `requirements.txt`
+- `tests/test_pipeline_integration.py`
+
+## 8. Installation
+
+Open PowerShell in the project root directory.
+
+Create and activate a virtual environment if one does not already exist:
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
 ```
 
-Run all project tests with:
+Install project dependencies:
 
-```bash
-pytest -v
-```
-### Sprint 6 — Missing Value Handling
-
-Sprint 6 extends the Clean module with missing-value analysis and handling.
-
-The system:
-
-* Generates a missing-value report
-* Calculates missing-value percentages
-* Fills numerical missing values using the median
-* Fills categorical missing values using the mode
-* Saves the cleaned dataset
-* Records the cleaning process
-
-### Outputs
-
-`results/missing_value_report.json`
-
-`results/cleaned_data_v2.csv`
-
-### Tests
-
-Run Sprint 6 tests:
-
-```bash
-pytest tests/test_missing.py -v
+```powershell
+python -m pip install -r requirements.txt
 ```
 
-Run all project tests:
+## 9. Run the Pipeline
 
-```bash
-pytest -v
+Execute the complete CLI workflow:
+
+```powershell
+python pipeline.py --input data/raw/diabetic_data.csv --output results/
 ```
 
-### Sprint 7 — Data Consistency and Cleaning Quality
+To specify the configuration file explicitly:
 
-Sprint 7 adds automated quality checks to verify the cleaned dataset before further validation.
-
-The system checks:
-
-* Remaining missing values
-* Duplicate rows
-* Selected numerical value ranges
-* Overall cleaning quality status
-
-### Outputs
-
-`results/cleaning_quality_report.json`
-
-`results/final_cleaned_data.csv`
-
-### Tests
-
-Run Sprint 7 tests:
-
-```bash
-pytest tests/test_cleaning_quality.py -v
+```powershell
+python pipeline.py --input data/raw/diabetic_data.csv --output results/ --config config.yaml
 ```
 
-Run all project tests:
+The pipeline processes the input dataset and saves profiling, cleaning, and validation outputs in `results/`.
 
-```bash
-pytest -v
+## 10. Configuration and Logging
+
+The `config.yaml` file defines the pipeline name, log level, cleaning settings, required columns, and numeric validation ranges.
+
+The logging configuration supports INFO, WARNING, and ERROR levels. Pipeline messages are available through the console and configured log file.
+
+## 11. Run Tests
+
+Run the complete test suite:
+
+```powershell
+python -m pytest -v
 ```
+
+Run the pipeline integration tests:
+
+```powershell
+python -m pytest tests/test_pipeline_integration.py -v
+```
+
+**Recorded test result:** 28 tests passed. Six pandas warnings were reported during that test run.
+
+## 12. Docker Execution
+
+Build the Docker image from the project root:
+
+```powershell
+docker build --load -t data-quality-pipeline .
+```
+
+Run the pipeline inside a container:
+
+```powershell
+docker run --rm -v "${PWD}/data:/data" -v "${PWD}/results:/results" data-quality-pipeline --input /data/raw/diabetic_data.csv --output /results
+```
+
+Docker Desktop must be installed and running. The mounted directories allow the container to read the dataset and write the generated results to the host machine.
+
+The Docker image build and containerized pipeline execution were verified successfully.
+
+## 13. Data Versioning
+
+### DVC
+
+DVC tracks the raw dataset through:
+
+`data/raw/diabetic_data.csv.dvc`
+
+Check the current DVC state:
+
+```powershell
+dvc status
+```
+
+The recorded status was `Data and pipelines are up to date.`
+
+A DVC remote backup is not claimed unless a remote is configured and the data has been pushed successfully.
+
+### Git LFS
+
+Git LFS is configured for selected large-file formats:
+
+- `*.mp4`
+- `*.pth`
+- `*.keras`
+
+The demonstration video is tracked through Git LFS:
+
+`demo/project_demo.mp4`
+
+Verify tracked files using:
+
+```powershell
+git lfs ls-files
+```
+
+The raw CSV dataset is tracked using DVC rather than Git LFS.
+
+## 14. Recorded Results
+
+The recorded pipeline run reported the following:
+
+| Metric | Result |
+|---|---:|
+| Input records | 101,766 |
+| Input columns | 50 |
+| Duplicate input rows | 0 |
+| Cleaned records | 101,766 |
+| Duplicate rows removed | 0 |
+| Missing values in validated cleaned output | 0 |
+| Missing required columns | 0 |
+| Invalid values in configured numeric range checks | 0 |
+| Automated tests passed | 28 |
+| Validation status | Passed |
+
+A pandas `DtypeWarning` concerning mixed data types in `payer_code` appeared during execution. The pipeline still completed successfully.
+
+These results apply to the recorded run and configured validation rules.
+
+## 15. Documentation and Demonstration
+
+The `docs/` directory contains project information, dataset documentation, module documentation, sprint reports, and the final project report.
+
+The `demo/project_demo.mp4` file provides a recorded demonstration of the project.
+
+## 16. Limitations
+
+- Validation covers the rules defined in the configuration and implemented checks.
+- Median and mode imputation may not be appropriate for every analytical use case.
+- Mixed data types in `payer_code` can produce a pandas warning.
+- Passing validation does not guarantee that every value is factually or clinically correct.
+- A remote DVC backup is not claimed without a configured remote and successful push.
+
+## 17. Conclusion
+
+The project provides an automated workflow for profiling, cleaning, and validating a healthcare dataset. It includes command-line execution, YAML-based configuration, logging, Docker support, automated tests, DVC dataset tracking, and Git LFS configuration for selected large files.
+
+The recorded execution processed the 101,766-record, 50-column dataset and completed with the configured validation checks passing. The project demonstrates a reproducible approach to preparing structured data for subsequent analysis.
+
+## 18. References
+
+1. [UCI Machine Learning Repository — Diabetes 130-US Hospitals](https://archive.ics.uci.edu/dataset/296/diabetes+130-us+hospitals+for+years+1999-2008)
+2. [Pandas Documentation](https://pandas.pydata.org/docs/)
+3. [Pytest Documentation](https://docs.pytest.org/)
+4. [Docker Documentation](https://docs.docker.com/)
+5. [DVC Documentation](https://dvc.org/doc)
+6. [Git LFS](https://git-lfs.com/)

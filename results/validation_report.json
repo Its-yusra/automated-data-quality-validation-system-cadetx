@@ -1,77 +1,168 @@
 {
-    "dataset_rows": 101766,
-    "dataset_columns": 50,
-    "required_columns_check": {
-        "required_columns": [
-            "encounter_id",
-            "patient_nbr",
-            "race",
-            "gender",
-            "age",
-            "time_in_hospital",
-            "readmitted"
-        ],
-        "missing_columns": [],
-        "passed": true
-    },
-    "missing_values_check": {
-        "columns_with_missing_values": {},
-        "total_missing_values": 0,
-        "passed": true
-    },
-    "duplicate_check": {
+    "pipeline_name": "automated-data-quality-validation",
+    "input_file": "data\\raw\\diabetic_data.csv",
+    "profile": {
+        "rows": 101766,
+        "columns": 50,
+        "missing_values": {
+            "encounter_id": 0,
+            "patient_nbr": 0,
+            "race": 2273,
+            "gender": 0,
+            "age": 0,
+            "weight": 98569,
+            "admission_type_id": 0,
+            "discharge_disposition_id": 0,
+            "admission_source_id": 0,
+            "time_in_hospital": 0,
+            "payer_code": 40256,
+            "medical_specialty": 49949,
+            "num_lab_procedures": 0,
+            "num_procedures": 0,
+            "num_medications": 0,
+            "number_outpatient": 0,
+            "number_emergency": 0,
+            "number_inpatient": 0,
+            "diag_1": 21,
+            "diag_2": 358,
+            "diag_3": 1423,
+            "number_diagnoses": 0,
+            "max_glu_serum": 96420,
+            "A1Cresult": 84748,
+            "metformin": 0,
+            "repaglinide": 0,
+            "nateglinide": 0,
+            "chlorpropamide": 0,
+            "glimepiride": 0,
+            "acetohexamide": 0,
+            "glipizide": 0,
+            "glyburide": 0,
+            "tolbutamide": 0,
+            "pioglitazone": 0,
+            "rosiglitazone": 0,
+            "acarbose": 0,
+            "miglitol": 0,
+            "troglitazone": 0,
+            "tolazamide": 0,
+            "examide": 0,
+            "citoglipton": 0,
+            "insulin": 0,
+            "glyburide-metformin": 0,
+            "glipizide-metformin": 0,
+            "glimepiride-pioglitazone": 0,
+            "metformin-rosiglitazone": 0,
+            "metformin-pioglitazone": 0,
+            "change": 0,
+            "diabetesMed": 0,
+            "readmitted": 0
+        },
         "duplicate_rows": 0,
-        "passed": true
-    },
-    "numeric_range_checks": {
-        "time_in_hospital": {
-            "minimum_allowed": 1,
-            "maximum_allowed": 14,
-            "invalid_values": 0,
-            "passed": true
-        },
-        "num_lab_procedures": {
-            "minimum_allowed": 0,
-            "maximum_allowed": 200,
-            "invalid_values": 0,
-            "passed": true
-        },
-        "num_procedures": {
-            "minimum_allowed": 0,
-            "maximum_allowed": 10,
-            "invalid_values": 0,
-            "passed": true
-        },
-        "num_medications": {
-            "minimum_allowed": 0,
-            "maximum_allowed": 100,
-            "invalid_values": 0,
-            "passed": true
-        },
-        "number_outpatient": {
-            "minimum_allowed": 0,
-            "maximum_allowed": 100,
-            "invalid_values": 0,
-            "passed": true
-        },
-        "number_emergency": {
-            "minimum_allowed": 0,
-            "maximum_allowed": 100,
-            "invalid_values": 0,
-            "passed": true
-        },
-        "number_inpatient": {
-            "minimum_allowed": 0,
-            "maximum_allowed": 100,
-            "invalid_values": 0,
-            "passed": true
-        },
-        "number_diagnoses": {
-            "minimum_allowed": 1,
-            "maximum_allowed": 20,
-            "invalid_values": 0,
-            "passed": true
+        "dtypes": {
+            "encounter_id": "int64",
+            "patient_nbr": "int64",
+            "race": "str",
+            "gender": "str",
+            "age": "str",
+            "weight": "str",
+            "admission_type_id": "int64",
+            "discharge_disposition_id": "int64",
+            "admission_source_id": "int64",
+            "time_in_hospital": "int64",
+            "payer_code": "str",
+            "medical_specialty": "str",
+            "num_lab_procedures": "int64",
+            "num_procedures": "int64",
+            "num_medications": "int64",
+            "number_outpatient": "int64",
+            "number_emergency": "int64",
+            "number_inpatient": "int64",
+            "diag_1": "str",
+            "diag_2": "str",
+            "diag_3": "str",
+            "number_diagnoses": "int64",
+            "max_glu_serum": "str",
+            "A1Cresult": "str",
+            "metformin": "str",
+            "repaglinide": "str",
+            "nateglinide": "str",
+            "chlorpropamide": "str",
+            "glimepiride": "str",
+            "acetohexamide": "str",
+            "glipizide": "str",
+            "glyburide": "str",
+            "tolbutamide": "str",
+            "pioglitazone": "str",
+            "rosiglitazone": "str",
+            "acarbose": "str",
+            "miglitol": "str",
+            "troglitazone": "str",
+            "tolazamide": "str",
+            "examide": "str",
+            "citoglipton": "str",
+            "insulin": "str",
+            "glyburide-metformin": "str",
+            "glipizide-metformin": "str",
+            "glimepiride-pioglitazone": "str",
+            "metformin-rosiglitazone": "str",
+            "metformin-pioglitazone": "str",
+            "change": "str",
+            "diabetesMed": "str",
+            "readmitted": "str"
         }
     },
-    "overall_validation_passed": true
+    "cleaning": {
+        "rows_before": 101766,
+        "rows_after": 101766,
+        "duplicates_removed": 0,
+        "output_file": "results\\cleaned_data.csv"
+    },
+    "validation": {
+        "passed": true,
+        "missing_required_columns": [],
+        "total_missing_values": 0,
+        "missing_values_by_column": {},
+        "duplicate_rows": 0,
+        "numeric_range_checks": {
+            "time_in_hospital": {
+                "minimum_allowed": 1,
+                "maximum_allowed": 14,
+                "invalid_values": 0
+            },
+            "num_lab_procedures": {
+                "minimum_allowed": 0,
+                "maximum_allowed": 200,
+                "invalid_values": 0
+            },
+            "num_procedures": {
+                "minimum_allowed": 0,
+                "maximum_allowed": 10,
+                "invalid_values": 0
+            },
+            "num_medications": {
+                "minimum_allowed": 0,
+                "maximum_allowed": 100,
+                "invalid_values": 0
+            },
+            "number_outpatient": {
+                "minimum_allowed": 0,
+                "maximum_allowed": 100,
+                "invalid_values": 0
+            },
+            "number_emergency": {
+                "minimum_allowed": 0,
+                "maximum_allowed": 100,
+                "invalid_values": 0
+            },
+            "number_inpatient": {
+                "minimum_allowed": 0,
+                "maximum_allowed": 100,
+                "invalid_values": 0
+            },
+            "number_diagnoses": {
+                "minimum_allowed": 1,
+                "maximum_allowed": 20,
+                "invalid_values": 0
+            }
+        }
+    }
 }
